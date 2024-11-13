@@ -1,11 +1,9 @@
-import { DefaultLayout, GlobalStyles } from '#layouts';
+import DefaultLayout from '#layouts/Default';
 import { Outlet } from 'react-router-dom';
 
 function Root() {
   return (
     <>
-      <GlobalStyles />
-
       <DefaultLayout>
         <Outlet />
       </DefaultLayout>

@@ -1,23 +1,21 @@
+import Header from '#components/Header';
 import PropTypes from 'prop-types';
-import './index.scss';
-import { NavLink } from 'react-router-dom';
+import styles from './DefaultLayout.module.scss';
+import classNames from 'classnames';
 
-function Default({ children }) {
+function DefaultLayout({ children }) {
   return (
-    <>
-      <header>
-        <NavLink to='/'>Logo</NavLink>
-        <NavLink to='contact'>Contact</NavLink>
-      </header>
+    <div className={classNames(styles.wrap)}>
+      <Header />
+      <main className={styles.main}>{children}</main>
 
-      <main>{children}</main>
-      <footer>My Footer</footer>
-    </>
+      <footer>Footer</footer>
+    </div>
   );
 }
 
-Default.propTypes = {
+DefaultLayout.propTypes = {
   children: PropTypes.node,
 };
 
-export default Default;
+export default DefaultLayout;

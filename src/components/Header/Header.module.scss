@@ -1,0 +1,26 @@
+@use '#styles' as *;
+
+.header {
+  background-color: $yellow;
+  padding-block: 10px;
+}
+
+.wrap {
+  @include flexBox(space-between, center);
+}
+
+.menuBox {
+  @include flexBox(null, center);
+  gap: 20px;
+}
+
+.boxIcon {
+  display: flex;
+  gap: 10px;
+}
+
+.menu {
+  @include flexBox(null, center);
+  align-self: stretch;
+  gap: 20px;
+}

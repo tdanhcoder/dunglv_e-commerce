@@ -1,0 +1,20 @@
+@use '#styles' as *;
+
+.icon {
+  @include radius(50%);
+  @include size(15px);
+
+  padding: 6px;
+  background-color: $primary_color;
+
+  img {
+    @include size(100%);
+
+    display: block;
+    filter: invert(1);
+  }
+
+  &:hover {
+    background-color: rgba($primary_color, 0.8);
+  }
+}

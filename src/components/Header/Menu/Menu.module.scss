@@ -1,0 +1,32 @@
+@use '#styles' as *;
+
+.menu {
+  position: relative;
+  padding-block: 10px;
+  text-decoration: none;
+  color: inherit;
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 1px;
+
+    background-color: $primary_color;
+    transition: all 0.1s ease-in;
+  }
+
+  &:hover {
+    color: $tertiary_color;
+
+    &::before {
+      width: 100%;
+    }
+  }
+  &:active {
+    color: red;
+  }
+}

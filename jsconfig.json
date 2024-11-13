@@ -1,13 +1,16 @@
 {
   "compilerOptions": {
     "module": "CommonJS",
-    "target": "ES6",
+    "target": "ES2016",
     "baseUrl": "./src",
     "paths": {
       "#pages/*": ["pages/*"],
+      "#components/*": ["components/*"],
       "#features/*": ["features/*"],
       "#layouts/*": ["layouts/*"],
-      "#constants/*": ["constants/*"]
+      "#constants/*": ["constants/*"],
+
+      "#/*": ["*"]
     }
   },
   "include": ["src/**/*"]

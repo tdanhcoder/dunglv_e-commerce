@@ -1,0 +1,23 @@
+@use '#styles' as *;
+
+.btn {
+  $btn_color: $white;
+  @include radius(10px);
+  @include size(100px, 50px);
+
+  display: inline-block;
+  background-color: $btn_color;
+
+  outline: none;
+  border: none;
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgba($btn_color, 0.5);
+    border: 1px solid $black;
+  }
+}
+
+.square {
+  @include size(44px);
+}

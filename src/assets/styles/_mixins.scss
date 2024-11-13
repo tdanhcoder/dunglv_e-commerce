@@ -1,0 +1,14 @@
+@mixin radius($r: 10px) {
+  border-radius: $r;
+}
+
+@mixin size($w, $h: $w) {
+  width: $w;
+  height: $h;
+}
+
+@mixin flexBox($x: flex-start, $y: flex-start) {
+  display: flex;
+  justify-content: $x;
+  align-items: $y;
+}
